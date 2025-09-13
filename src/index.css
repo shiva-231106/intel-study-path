@@ -2,41 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Adaptive Learning Platform Design System
+All colors MUST be HSL for consistency and theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Background System */
+    --background: 220 15% 97%;
+    --background-secondary: 215 25% 95%;
+    --foreground: 220 45% 8%;
 
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-secondary: 215 20% 98%;
+    --card-foreground: 220 45% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Educational Primary - Deep Academic Blue */
+    --primary: 217 80% 45%;
+    --primary-light: 217 65% 60%;
+    --primary-dark: 217 85% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Learning Green - Growth and Progress */
+    --learning: 145 70% 45%;
+    --learning-light: 145 60% 60%;
+    --learning-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Achievement Gold */
+    --achievement: 45 90% 55%;
+    --achievement-light: 45 85% 70%;
+    --achievement-foreground: 45 85% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Analytics Purple */
+    --analytics: 260 75% 50%;
+    --analytics-light: 260 60% 65%;
+    --analytics-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* System Colors */
+    --secondary: 215 25% 95%;
+    --secondary-foreground: 220 45% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 215 20% 92%;
+    --muted-foreground: 220 25% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 215 25% 90%;
+    --accent-foreground: 220 45% 15%;
 
-    --radius: 0.5rem;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 88%;
+    --input: 215 25% 88%;
+    --ring: 217 80% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-learning: linear-gradient(135deg, hsl(var(--learning)), hsl(var(--learning-light)));
+    --gradient-achievement: linear-gradient(135deg, hsl(var(--achievement)), hsl(var(--achievement-light)));
+    --gradient-analytics: linear-gradient(135deg, hsl(var(--analytics)), hsl(var(--analytics-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--learning)));
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 4px 16px -4px hsl(var(--primary) / 0.15);
+    --shadow-strong: 0 8px 32px -8px hsl(var(--primary) / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 

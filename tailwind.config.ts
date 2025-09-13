@@ -17,11 +17,31 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          secondary: "hsl(var(--background-secondary))",
+        },
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
+          light: "hsl(var(--primary-light))",
+          dark: "hsl(var(--primary-dark))",
           foreground: "hsl(var(--primary-foreground))",
+        },
+        learning: {
+          DEFAULT: "hsl(var(--learning))",
+          light: "hsl(var(--learning-light))",
+          foreground: "hsl(var(--learning-foreground))",
+        },
+        achievement: {
+          DEFAULT: "hsl(var(--achievement))",
+          light: "hsl(var(--achievement-light))",
+          foreground: "hsl(var(--achievement-foreground))",
+        },
+        analytics: {
+          DEFAULT: "hsl(var(--analytics))",
+          light: "hsl(var(--analytics-light))",
+          foreground: "hsl(var(--analytics-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -45,6 +65,7 @@ export default {
         },
         card: {
           DEFAULT: "hsl(var(--card))",
+          secondary: "hsl(var(--card-secondary))",
           foreground: "hsl(var(--card-foreground))",
         },
         sidebar: {
